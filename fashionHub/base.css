@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #0D3356; /* Định nghĩa biến màu chính */
+    --text-filter: #1D364D;
+    --text-item-primary: #667085;
+    --text-item-secondary: #98A2B3;
+    --color-text-banner : #3A4980;
+    --color-text-gray:#667085;
+     /* Định nghĩa biến màu phụ */
+  }
+  
+
+* {
+    font-family: "Inter", sans-serif;
+}
+
+p{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+button,select{
+    outline: none;
+    border: 0;
+    font-weight: 600;
+    background-color: transparent;
+}
+select{
+    height: 37px;
+    border-radius: 28px;
+    background-color: #EBEDEC;
+    padding-right: 10px;
+    padding-left: 10px;
+    font-weight: 600;    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("./icon/Frame\ \(2\).png");
+    background-repeat: no-repeat;
+    background-position: calc(100% - 9px) center;
+    padding-right: 35px; 
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    position: relative;
+    z-index: 2;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
