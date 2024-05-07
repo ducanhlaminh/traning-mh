@@ -112,7 +112,8 @@
         .images-bottom {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 20px;
+            margin-top: 37px;
         }
     }
     .info {
@@ -191,6 +192,250 @@
                         align-items: center;
                     }
                 }
+            }
+        }
+        .container-price-rating {
+            display: flex;
+            gap: 100px;
+            padding: 30px 0;
+            border-bottom: 1px solid #e4e4e4;
+            .rate-star {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                .star-review {
+                    display: flex;
+                    gap: 10px;
+                    height: 41px;
+                    font-weight: bold;
+                    img {
+                        height: 18px;
+                    }
+                    .star {
+                        background-color: #fbf3ea;
+                        color: #d48d3b;
+                        padding: 0 10px;
+                        border-radius: 27px;
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        font-size: 16px;
+                    }
+                    .review {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 10px;
+                        border-radius: 27px;
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        font-size: 16px;
+                        background-color: #edf0f8;
+                        color: var(--primary-color);
+                    }
+                }
+                .rate {
+                    color: var(--text-item-secondary);
+                    span {
+                        color: #3e9242;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .container-price {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+                .price-new {
+                    display: block;
+                    font-weight: 700;
+                    font-size: 34px;
+                    color: var(--primary-color);
+                }
+                .price-odd {
+                    display: block;
+                    font-size: 20px;
+                    color: var(--text-item-secondary);
+                    text-decoration: line-through;
+                }
+            }
+        }
+        .container-color {
+            padding: 30px 0;
+            border-bottom: 1px solid #e4e4e4;
+            span {
+                color: var(--text-item-secondary);
+                font-weight: normal;
+            }
+            .list-color {
+                display: flex;
+                gap: 10px;
+                margin-top: 13px;
+                .color-outside {
+                    height: 54px;
+                    width: 54px;
+                    border-radius: 100%;
+                    position: relative;
+                    border: 3px solid #bbc1f8;
+                    .color {
+                        background-color: #bbc1f8;
+                        height: 40px;
+                        width: 40px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-20px, -20px);
+                        border-radius: 100%;
+                        .active {
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+
+                .color2 {
+                    background-color: #bbd278;
+                    height: 50px;
+                    width: 50px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        .container-size {
+            padding: 30px 0;
+            border-bottom: 1px solid #e4e4e4;
+            span {
+                color: var(--text-item-secondary);
+                font-weight: normal;
+            }
+            .list-size {
+                display: flex;
+                margin-top: 13px;
+                gap: 15px;
+                height: 30px;
+                li {
+                    background-color: #f3f3f3;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    position: relative;
+                    width: 120px;
+                    padding-left: 40px;
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                    }
+                    .checkmark {
+                        position: absolute;
+                        top: 50%;
+                        left: 8px;
+                        height: 16px;
+                        width: 16px;
+                        background-color: #eee;
+                        border-radius: 50%;
+                        border: 1px solid #6b6b6bb0;
+                        transform: translateY(-50%);
+                    }
+                    & input:checked ~ .checkmark {
+                        background-color: #fff;
+                    }
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+
+                    /* Show the indicator (dot/circle) when checked */
+                    & input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+
+                    /* Style the indicator (dot/circle) */
+                    & .checkmark:after {
+                        top: 50%;
+                        left: 50%;
+                        width: 8px;
+                        transform: translate(-50%, -50%);
+                        height: 8px;
+                        border-radius: 50%;
+                        background: var(--primary-color);
+                    }
+                    .active {
+                        color: var(--primary-color);
+                    }
+                }
+            }
+        }
+        .container-number-button {
+            display: flex;
+            position: relative;
+            height: 60px;
+            margin-top: 30px;
+            .btnAmount {
+                font-weight: bolder;
+                .number {
+                    width: 180px;
+                    height: 100%;
+                    border-radius: 40px;
+                    background-color: #f3f3f3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            .btnAddToCart {
+                position: absolute;
+                right: 150px;
+                font-weight: normal;
+                width: 300px;
+                color: white;
+                border-radius: 40px;
+                background-color: #3a4980;
+            }
+
+            button {
+                position: absolute;
+                width: 60px;
+                height: 100%;
+                border-radius: 100%;
+                font-weight: bolder;
+                font-size: 20px;
+            }
+            .btnAdd {
+                top: 0;
+                left: 120px;
+            }
+        }
+        .container-voucher {
+            margin-top: 30px;
+            border: 1px solid #f3f3f3;
+            padding: 20px;
+            .voucher {
+                display: flex;
+                padding: 16px;
+                gap: 16px;
+                .voucher-icon {
+                }
+                .voucher-info {
+                    p {
+                        font-weight: bold;
+                        margin-bottom: 7px;
+                    }
+                    u {
+                        color: var(--text-item-secondary);
+                    }
+                }
+            }
+            .voucher:not(:last-child) {
+                border-bottom: 1px solid #f3f3f3;
             }
         }
     }

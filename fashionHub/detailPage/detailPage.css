@@ -113,7 +113,8 @@
 .info-detail .images .images-bottom {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  margin-top: 37px;
 }
 .info-detail .info {
   flex: auto;
@@ -191,6 +192,242 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.info-detail .info .container-price-rating {
+  display: flex;
+  gap: 100px;
+  padding: 30px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.info-detail .info .container-price-rating .rate-star {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.info-detail .info .container-price-rating .rate-star .star-review {
+  display: flex;
+  gap: 10px;
+  height: 41px;
+  font-weight: bold;
+}
+.info-detail .info .container-price-rating .rate-star .star-review img {
+  height: 18px;
+}
+.info-detail .info .container-price-rating .rate-star .star-review .star {
+  background-color: #fbf3ea;
+  color: #d48d3b;
+  padding: 0 10px;
+  border-radius: 27px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+}
+.info-detail .info .container-price-rating .rate-star .star-review .review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 27px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  background-color: #edf0f8;
+  color: var(--primary-color);
+}
+.info-detail .info .container-price-rating .rate-star .rate {
+  color: var(--text-item-secondary);
+}
+.info-detail .info .container-price-rating .rate-star .rate span {
+  color: #3e9242;
+  font-weight: 500;
+}
+.info-detail .info .container-price-rating .container-price {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.info-detail .info .container-price-rating .container-price .price-new {
+  display: block;
+  font-weight: 700;
+  font-size: 34px;
+  color: var(--primary-color);
+}
+.info-detail .info .container-price-rating .container-price .price-odd {
+  display: block;
+  font-size: 20px;
+  color: var(--text-item-secondary);
+  text-decoration: line-through;
+}
+.info-detail .info .container-color {
+  padding: 30px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.info-detail .info .container-color span {
+  color: var(--text-item-secondary);
+  font-weight: normal;
+}
+.info-detail .info .container-color .list-color {
+  display: flex;
+  gap: 10px;
+  margin-top: 13px;
+}
+.info-detail .info .container-color .list-color .color-outside {
+  height: 54px;
+  width: 54px;
+  border-radius: 100%;
+  position: relative;
+  border: 3px solid #bbc1f8;
+}
+.info-detail .info .container-color .list-color .color-outside .color {
+  background-color: #bbc1f8;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-20px, -20px);
+  border-radius: 100%;
+}
+.info-detail .info .container-color .list-color .color-outside .color .active {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.info-detail .info .container-color .list-color .color2 {
+  background-color: #bbd278;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+.info-detail .info .container-size {
+  padding: 30px 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.info-detail .info .container-size span {
+  color: var(--text-item-secondary);
+  font-weight: normal;
+}
+.info-detail .info .container-size .list-size {
+  display: flex;
+  margin-top: 13px;
+  gap: 15px;
+  height: 30px;
+}
+.info-detail .info .container-size .list-size li {
+  background-color: #f3f3f3;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  width: 120px;
+  padding-left: 40px;
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.info-detail .info .container-size .list-size li input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.info-detail .info .container-size .list-size li .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid rgba(107, 107, 107, 0.6901960784);
+  transform: translateY(-50%);
+}
+.info-detail .info .container-size .list-size li input:checked ~ .checkmark {
+  background-color: #fff;
+}
+.info-detail .info .container-size .list-size li .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.info-detail .info .container-size .list-size li input:checked ~ .checkmark:after {
+  display: block;
+}
+.info-detail .info .container-size .list-size li .checkmark:after {
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+.info-detail .info .container-size .list-size li .active {
+  color: var(--primary-color);
+}
+.info-detail .info .container-number-button {
+  display: flex;
+  position: relative;
+  height: 60px;
+  margin-top: 30px;
+}
+.info-detail .info .container-number-button .btnAmount {
+  font-weight: bolder;
+}
+.info-detail .info .container-number-button .btnAmount .number {
+  width: 180px;
+  height: 100%;
+  border-radius: 40px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info-detail .info .container-number-button .btnAddToCart {
+  position: absolute;
+  right: 150px;
+  font-weight: normal;
+  width: 300px;
+  color: white;
+  border-radius: 40px;
+  background-color: #3a4980;
+}
+.info-detail .info .container-number-button button {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  border-radius: 100%;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.info-detail .info .container-number-button .btnAdd {
+  top: 0;
+  left: 120px;
+}
+.info-detail .info .container-voucher {
+  margin-top: 30px;
+  border: 1px solid #f3f3f3;
+  padding: 20px;
+}
+.info-detail .info .container-voucher .voucher {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+}
+.info-detail .info .container-voucher .voucher .voucher-info p {
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.info-detail .info .container-voucher .voucher .voucher-info u {
+  color: var(--text-item-secondary);
+}
+.info-detail .info .container-voucher .voucher:not(:last-child) {
+  border-bottom: 1px solid #f3f3f3;
 }
 
 .footer {
