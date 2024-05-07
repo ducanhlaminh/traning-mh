@@ -1,0 +1,83 @@
+.header {
+    position: fixed;
+    height: 85px;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
+    .header-container {
+        padding: 0 82px;
+        width: 100%;
+        max-width: 1152px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &-right {
+        display: flex;
+        height: 24px;
+        gap: 50px;
+        width: 50%;
+        justify-content: space-between;
+        .brandName {
+            display: flex;
+            align-items: center;
+            font-weight: 800;
+            font-size: 24px;
+        }
+        .input-search {
+            display: flex;
+            gap: 10px;
+            width: 200px;
+            height: 24px;
+            img {
+                height: 100%;
+            }
+        }
+    }
+    &-left {
+        width: 25%;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        height: 24px;
+        &-list {
+            gap: 30px;
+            &-item {
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+.container-cards {
+    .container-cards_horizonal {
+        justify-content: center;
+        display: flex;
+        height: 245px;
+        border: 1px solid #e2e2e2;
+        &_info {
+            padding: 55px;
+            width: 50%;
+            &-head {
+                margin-bottom: 27px;
+            }
+            &-des {
+                color: #718096;
+                font-weight: lighter;
+                font-size: 14px;
+            }
+        }
+        &_image {
+            width: 50%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
