@@ -9,23 +9,27 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="../../reset.css" />
         <link rel="stylesheet" href="../base.css" />
         <link rel="stylesheet" href="./listProductHasSidebar.css" />
-        <title>Document</title>
+        <link rel="icon" href="../favico/favicon.ico" type="image/x-icon" />
+        <title>FashionHub</title>
     </head>
     <body>
-        <div class="header">
+        <header class="header">
             <div class="header-container">
                 <div class="header-right">
                     <div class="brandName">
-                        <span>FashionHub</span>
+                        <h1>FashionHub</h1>
                     </div>
                     <nav class="nav-container">
                         <ul class="nav-list">
-                            <li class="nav-item">Category</li>
-                            <li class="nav-item">Brand</li>
-                            <li class="nav-item">Contact</li>
-                            <li class="nav-item">FAQ’s</li>
+                            <li class="nav-item"><a href="">Category</a></li>
+                            <li class="nav-item">
+                                <a href="">Brand</a>
+                            </li>
+                            <li class="nav-item"><a href="">Contact</a></li>
+                            <li class="nav-item"><a href="">FAQ’s</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -37,7 +41,9 @@
                                 class="icon"
                                 alt=""
                             />
-                            <span class="number-noti">3</span>
+                            <div class="number-noti">
+                                <span>3</span>
+                            </div>
                         </button>
                         <button class="noti">
                             <img src="../icon/Frame.png" class="icon" alt="" />
@@ -55,7 +61,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </header>
         <div class="container">
             <!-- Banner -->
             <div class="banner">
@@ -70,17 +76,448 @@
             <div class="layout-sidebar">
                 <div class="filter">
                     <div class="header-filter">
-                        <span>Filter</span>
+                        <strong>Filter</strong>
                         <button>Clear</button>
                     </div>
                     <div class="fields-filter">
                         <div class="field">
-                            <div class=""></div>
+                            <div class="name-field">
+                                <strong>Price</strong>
+                                <img src="../icon/Vector (1).png" alt="" />
+                            </div>
+                            <div class="option-field">
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Kid</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Kid</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Kid</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Kid</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Kid</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Kid</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <button>Show more</button>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="name-field">
+                                <strong>Rating</strong>
+                                <img src="../icon/Vector (1).png" alt="" />
+                            </div>
+                            <div class="option-field">
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="radio" name="" id="" />
+                                        <span class="checkmark"></span>
+                                        <img src="../images/star.png" alt="" />
+                                        <label for="">4.5 & up</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="radio" name="" id="" />
+                                        <img src="../images/star.png" alt="" />
+                                        <label for="">4.5 & up</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="radio" name="" id="" />
+                                        <img src="../images/star.png" alt="" />
+                                        <label for="">4.5 & up</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="radio" name="" id="" />
+                                        <img src="../images/star.png" alt="" />
+                                        <label for="">4.5 & up</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="radio" name="" id="" />
+                                        <img src="../images/star.png" alt="" />
+                                        <label for="">4.5 & up</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="radio" name="" id="" />
+                                        <img src="../images/star.png" alt="" />
+                                        <label for="">4.5 & up</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <button>Show more</button>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="name-field">
+                                <strong>Brand</strong>
+                                <img src="../icon/Vector (1).png" alt="" />
+                            </div>
+                            <div class="option-field">
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Adidas</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Adidas</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Adidas</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Adidas</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Adidas</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <div class="option">
+                                    <div class="checkbox-label">
+                                        <input type="checkbox" name="" id="" />
+                                        <label for="">Adidas</label>
+                                    </div>
+
+                                    <span>(123)</span>
+                                </div>
+                                <button>Show more</button>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="name-field">
+                                <strong>Price</strong>
+                                <img src="../icon/Vector (1).png" alt="" />
+                            </div>
+                            <input type="range" name="" id="" />
+                            <div class="input-number">
+                                <input type="number" name="" id="" />
+                                <input type="number" name="" id="" />
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="name-field">
+                                <strong>Rating</strong>
+                                <img src="../icon/Vector (1).png" alt="" />
+                            </div>
+                            <input type="range" name="" id="" />
+                            <div class="input-number">
+                                <input type="number" name="" id="" />
+                                <input type="number" name="" id="" />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="container-list-product">
+                    <div class="total-sort">
+                        <strong>Showing 12 Result from total 230</strong>
+                        <select name="" id="">
+                            <option value="">Popularity</option>
+                        </select>
+                    </div>
                     <div class="list-product">
+                        <div class="product">
+                            <div class="btn-like">
+                                <button>
+                                    <img src="../icon/icon.png" alt="" />
+                                </button>
+                            </div>
+                            <div class="image-product">
+                                <img
+                                    src="../images/My project (1) 1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-top">
+                                    <div class="product-name">
+                                        <span>Adidas</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>₹ 675.00</span>
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    5 types of shoos available
+                                </div>
+                                <div class="rating">
+                                    <img src="../icon/Frame 10.png" alt="" />
+                                    <span>(121)</span>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                    <button class="btn-add-to-list">
+                                        Add Shortlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="btn-like">
+                                <button>
+                                    <img src="../icon/icon.png" alt="" />
+                                </button>
+                            </div>
+                            <div class="image-product">
+                                <img
+                                    src="../images/My project (1) 1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-top">
+                                    <div class="product-name">
+                                        <span>Adidas</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>₹ 675.00</span>
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    5 types of shoos available
+                                </div>
+                                <div class="rating">
+                                    <img src="../icon/Frame 10.png" alt="" />
+                                    <span>(121)</span>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                    <button class="btn-add-to-list">
+                                        Add Shortlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="btn-like">
+                                <button>
+                                    <img src="../icon/icon.png" alt="" />
+                                </button>
+                            </div>
+                            <div class="image-product">
+                                <img
+                                    src="../images/My project (1) 1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-top">
+                                    <div class="product-name">
+                                        <span>Adidas</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>₹ 675.00</span>
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    5 types of shoos available
+                                </div>
+                                <div class="rating">
+                                    <img src="../icon/Frame 10.png" alt="" />
+                                    <span>(121)</span>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                    <button class="btn-add-to-list">
+                                        Add Shortlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="btn-like">
+                                <button>
+                                    <img src="../icon/icon.png" alt="" />
+                                </button>
+                            </div>
+                            <div class="image-product">
+                                <img
+                                    src="../images/My project (1) 1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-top">
+                                    <div class="product-name">
+                                        <span>Adidas</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>₹ 675.00</span>
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    5 types of shoos available
+                                </div>
+                                <div class="rating">
+                                    <img src="../icon/Frame 10.png" alt="" />
+                                    <span>(121)</span>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                    <button class="btn-add-to-list">
+                                        Add Shortlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="btn-like">
+                                <button>
+                                    <img src="../icon/icon.png" alt="" />
+                                </button>
+                            </div>
+                            <div class="image-product">
+                                <img
+                                    src="../images/My project (1) 1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-top">
+                                    <div class="product-name">
+                                        <span>Adidas</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>₹ 675.00</span>
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    5 types of shoos available
+                                </div>
+                                <div class="rating">
+                                    <img src="../icon/Frame 10.png" alt="" />
+                                    <span>(121)</span>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                    <button class="btn-add-to-list">
+                                        Add Shortlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product">
+                            <div class="btn-like">
+                                <button>
+                                    <img src="../icon/icon.png" alt="" />
+                                </button>
+                            </div>
+                            <div class="image-product">
+                                <img
+                                    src="../images/My project (1) 1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-info">
+                                <div class="product-info-top">
+                                    <div class="product-name">
+                                        <span>Adidas</span>
+                                    </div>
+                                    <div class="product-price">
+                                        <span>₹ 675.00</span>
+                                    </div>
+                                </div>
+                                <div class="amount">
+                                    5 types of shoos available
+                                </div>
+                                <div class="rating">
+                                    <img src="../icon/Frame 10.png" alt="" />
+                                    <span>(121)</span>
+                                </div>
+                                <div class="btn-group">
+                                    <button class="btn-add-to-cart">
+                                        Add to Cart
+                                    </button>
+                                    <button class="btn-add-to-list">
+                                        Add Shortlist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                         <div class="product">
                             <div class="btn-like">
                                 <button>
@@ -218,105 +655,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="product">
-                            <div class="image-product">
-                                <img
-                                    src="../images/My project (1) 1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="product-info">
-                                <div class="product-info-top">
-                                    <div class="product-name">
-                                        <span>Adidas</span>
-                                    </div>
-                                    <div class="product-price">
-                                        <span>₹ 675.00</span>
-                                    </div>
-                                </div>
-                                <div class="amount">
-                                    5 types of shoos available
-                                </div>
-                                <div class="rating">
-                                    <img src="../icon/Frame 10.png" alt="" />
-                                    <span>(121)</span>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn-add-to-cart">
-                                        Add to Cart
-                                    </button>
-                                    <button class="btn-add-to-list">
-                                        Add Shortlist
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img
-                                    src="../images/My project (1) 1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="product-info">
-                                <div class="product-info-top">
-                                    <div class="product-name">
-                                        <span>Adidas</span>
-                                    </div>
-                                    <div class="product-price">
-                                        <span>₹ 675.00</span>
-                                    </div>
-                                </div>
-                                <div class="amount">
-                                    5 types of shoos available
-                                </div>
-                                <div class="rating">
-                                    <img src="../icon/Frame 10.png" alt="" />
-                                    <span>(121)</span>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn-add-to-cart">
-                                        Add to Cart
-                                    </button>
-                                    <button class="btn-add-to-list">
-                                        Add Shortlist
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="image-product">
-                                <img
-                                    src="../images/My project (1) 1.png"
-                                    alt=""
-                                />
-                            </div>
-                            <div class="product-info">
-                                <div class="product-info-top">
-                                    <div class="product-name">
-                                        <span>Adidas</span>
-                                    </div>
-                                    <div class="product-price">
-                                        <span>₹ 675.00</span>
-                                    </div>
-                                </div>
-                                <div class="amount">
-                                    5 types of shoos available
-                                </div>
-                                <div class="rating">
-                                    <img src="../icon/Frame 10.png" alt="" />
-                                    <span>(121)</span>
-                                </div>
-                                <div class="btn-group">
-                                    <button class="btn-add-to-cart">
-                                        Add to Cart
-                                    </button>
-                                    <button class="btn-add-to-list">
-                                        Add Shortlist
-                                    </button>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                     <div class="container-pagination">
                         <div class="pagination">

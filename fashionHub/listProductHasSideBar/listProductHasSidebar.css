@@ -20,15 +20,13 @@
   display: flex;
   width: 50%;
   height: 40px;
+  gap: 50px;
   color: var(--primary-color);
 }
 .header-right .brandName {
   display: flex;
   align-items: center;
-  font-weight: 800;
   font-style: italic;
-  font-size: 32.5px;
-  line-height: 33px;
 }
 .header-right .nav-container {
   display: flex;
@@ -36,12 +34,16 @@
 }
 .header-right .nav-container .nav-list {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .header-right .nav-container .nav-list .nav-item {
   font-weight: 500;
   padding: 10px;
   font-size: 16px;
+}
+.header-right .nav-container .nav-list .nav-item a {
+  font-family: "Inter-Semibold";
+  color: #1d364d;
 }
 .header-left {
   width: 25%;
@@ -82,6 +84,10 @@
   border-radius: 100%;
   background-color: var(--primary-color);
   color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-left .header-profile {
   display: flex;
@@ -140,27 +146,147 @@
 
 .layout-sidebar {
   display: flex;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .layout-sidebar .filter {
-  width: 300px;
+  width: 305px;
 }
 .layout-sidebar .filter .header-filter {
   display: flex;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.layout-sidebar .filter .header-filter button {
+  font-family: "Inter-Regular";
+  font-size: 14px;
+  border: 1px solid #E4E4E4;
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+.layout-sidebar .filter .fields-filter {
+  border: 1px solid #F3F3F3;
+  border-radius: 7px;
+}
+.layout-sidebar .filter .fields-filter .field {
+  padding: 17px;
+}
+.layout-sidebar .filter .fields-filter .field input[type=range] {
+  width: 100%;
+}
+.layout-sidebar .filter .fields-filter .field input[type=number] {
+  color: #667085;
+  margin-top: 10px;
+  outline: none;
+  padding: 15px 14px;
+  width: 100px;
+  border-radius: 14px;
+  border: 1px solid #DDDDDD;
+}
+.layout-sidebar .filter .fields-filter .field .name-field {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+}
+.layout-sidebar .filter .fields-filter .field .input-number {
+  display: flex;
+  gap: 10px;
+}
+.layout-sidebar .filter .fields-filter .field .option-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option {
+  gap: 10px;
+  display: flex;
   justify-content: space-between;
 }
+.layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label .checkmark {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 1px solid rgba(107, 107, 107, 0.6901960784);
+  transform: translateY(-50%);
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label input:checked ~ .checkmark {
+  background-color: #fff;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label .checkmark:after {
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option label {
+  font-family: "Inter-Medium";
+}
+.layout-sidebar .filter .fields-filter .field .option-field button {
+  margin-top: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: underline;
+  color: #6440FB;
+}
+.layout-sidebar .filter .fields-filter .field .option-field button:hover {
+  background-color: transparent;
+}
 .layout-sidebar .container-list-product {
-  flex: auto;
-  padding-left: 20px;
+  width: 955px;
+  margin-left: 20px;
+}
+.layout-sidebar .container-list-product .total-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 23px;
+  color: #0D3356;
+}
+.layout-sidebar .container-list-product .total-sort select {
+  color: #0D3356;
 }
 .layout-sidebar .container-list-product .list-product {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  margin-top: 20px;
 }
 .layout-sidebar .container-list-product .list-product .product {
-  width: 300px;
+  width: 305px;
   position: relative;
 }
 .layout-sidebar .container-list-product .list-product .product .btn-like {

@@ -20,15 +20,13 @@
   display: flex;
   width: 50%;
   height: 40px;
+  gap: 50px;
   color: var(--primary-color);
 }
 .header-right .brandName {
   display: flex;
   align-items: center;
-  font-weight: 800;
   font-style: italic;
-  font-size: 32.5px;
-  line-height: 33px;
 }
 .header-right .nav-container {
   display: flex;
@@ -36,12 +34,16 @@
 }
 .header-right .nav-container .nav-list {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 .header-right .nav-container .nav-list .nav-item {
   font-weight: 500;
   padding: 10px;
   font-size: 16px;
+}
+.header-right .nav-container .nav-list .nav-item a {
+  font-family: "Inter-Semibold";
+  color: #1d364d;
 }
 .header-left {
   width: 25%;
@@ -82,6 +84,10 @@
   border-radius: 100%;
   background-color: var(--primary-color);
   color: white;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-left .header-profile {
   display: flex;

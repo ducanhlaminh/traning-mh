@@ -9,8 +9,47 @@
   }
   
 
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('./fonts/Inter-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: url('./fonts/Inter-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: url('./fonts/Inter-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Light';
+    src: url('./fonts/Inter-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Medium';
+    src: url('./fonts/Inter-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('./fonts/Inter-SemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Thin';
+    src: url('./fonts/Inter-Thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Inter-Regular';
+    src: url('./fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('./fonts/ProximaNova-Bold.ttf') format('truetype');
+}
+
 * {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Regular";
     box-sizing: border-box;
 }
 
@@ -19,24 +58,28 @@ p{
 }
 
 body{
-    width: 100%;
+
     display: flex;
     justify-content: center;
 
 }
 
 button,select{
+    cursor: pointer;
     outline: none;
     border: 0;
-    font-weight: 600;
     background-color: transparent;
+    
+}
+
+button:hover{
+    background-color: #EBEDEC;
 }
 select{
     height: 37px;
     border-radius: 28px;
-    background-color: #EBEDEC;
-    padding-right: 10px;
-    padding-left: 10px;
+    background-color: #ebedec7a;
+    padding: 10px 35px 10px 14px;
     font-weight: 600;    
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -44,13 +87,13 @@ select{
     background-image: url("./icon/Frame\ \(2\).png");
     background-repeat: no-repeat;
     background-position: calc(100% - 9px) center;
-    padding-right: 35px; 
 }
 .container {
     width: 100%;
     max-width: 1280px;
     position: relative;
     z-index: 2;
+
 }
 
 ul {
@@ -61,4 +104,16 @@ ul {
 }
 h1, h2, h3, h4, h5, h6{
     margin: 0;
+}
+h1{
+            font-family: "Inter-Bold";
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: #1D364D;
+    font-weight: 500;
+}
+label{
+    cursor: pointer;
 }
