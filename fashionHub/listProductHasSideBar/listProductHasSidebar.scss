@@ -1,3 +1,11 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     position: fixed;
     height: 90px;
@@ -128,9 +136,9 @@
     margin-top: 125px;
     position: relative;
     background-image: linear-gradient(to bottom, #f4e8f3 100%, #f3eff6 100%);
-    border-radius: 10px;
     height: 287px;
-
+    width: 100%;
+    max-width: 1440px;
     .text-banner {
         position: absolute;
         left: 55px;
@@ -180,29 +188,29 @@
             button {
                 font-family: "Inter-Regular";
                 font-size: 14px;
-                border: 1px solid #E4E4E4;
+                border: 1px solid #e4e4e4;
                 border-radius: 30px;
                 padding: 10px 20px;
             }
         }
 
         .fields-filter {
-            border: 1px solid #F3F3F3;
+            border: 1px solid #f3f3f3;
             border-radius: 7px;
 
             .field {
                 padding: 17px;
-                input[type="range"]{
+                input[type="range"] {
                     width: 100%;
                 }
-                input[type="number"]{
-                    color:#667085;
+                input[type="number"] {
+                    color: #667085;
                     margin-top: 10px;
                     outline: none;
                     padding: 15px 14px;
                     width: 100px;
                     border-radius: 14px;
-                    border: 1px solid #DDDDDD;
+                    border: 1px solid #dddddd;
                 }
                 .name-field {
                     margin-bottom: 30px;
@@ -211,7 +219,7 @@
                     align-items: center;
                     font-size: 20px;
                 }
-                .input-number{
+                .input-number {
                     display: flex;
                     gap: 10px;
                 }
@@ -221,25 +229,25 @@
                     gap: 10px;
                     font-size: 14px;
                     padding-bottom: 30px;
-                    border-bottom: 1px solid #DDDDDD;
+                    border-bottom: 1px solid #dddddd;
                     .option {
                         gap: 10px;
                         display: flex;
                         justify-content: space-between;
+                        position: relative;
                         .checkbox-label {
                             display: flex;
                             align-items: center;
-                            gap: 10px;
-                            position: relative;
                             input[type="radio"] {
                                 position: absolute;
                                 opacity: 0;
+                                left: -10px;
                                 cursor: pointer;
                             }
                             .checkmark {
                                 position: absolute;
                                 top: 50%;
-                                left: 8px;
+                                left: -10px;
                                 height: 16px;
                                 width: 16px;
                                 background-color: #eee;
@@ -255,12 +263,12 @@
                                 position: absolute;
                                 display: none;
                             }
-        
+
                             /* Show the indicator (dot/circle) when checked */
                             & input:checked ~ .checkmark:after {
                                 display: block;
                             }
-        
+
                             /* Style the indicator (dot/circle) */
                             & .checkmark:after {
                                 top: 50%;
@@ -272,19 +280,158 @@
                                 background: var(--primary-color);
                             }
                         }
+                        .container-checkbox-custom {
+                            display: block;
+                            position: relative;
+                            padding-left: 35px;
+                            margin-bottom: 12px;
+                            cursor: pointer;
+                            font-size: 22px;
+                            -webkit-user-select: none;
+                            -moz-user-select: none;
+                            -ms-user-select: none;
+                            user-select: none;
+                            & input[type="checkbox"] {
+                                position: absolute;
+                                opacity: 0;
+                                cursor: pointer;
+                                height: 0;
+                                width: 0;
+                            }
+                            .checkmark-radio {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                height: 14px;
+                                width: 14px;
+                                border: 2px solid #6a7a99;
+                                &:after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                }
+                            }
+                            & input:checked ~ .checkmark-radio {
+                                background-color: #1a064f;
+                            }
+                            & input:checked ~ .checkmark-radio:after {
+                                display: block;
+                            }
+                            & .checkmark-radio:after {
+                                left: 3px;
+                                top: 1px;
+                                width: 3px;
+                                height: 5px;
+                                border: solid white;
+                                border-width: 0 2px 2px 0;
+                                -webkit-transform: rotate(45deg);
+                                -ms-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                            }
+                        }
+                        &-radio {
+                            gap: 10px;
+                            display: flex;
+                            justify-content: space-between;
+                            padding-left: 20px;
+                            position: relative;
+                            .checkbox-label {
+                                display: flex;
+                                align-items: center;
+                                gap: 10px;
+                                label {
+                                    color: #140342;
+                                }
+                                input[type="radio"] {
+                                    position: absolute;
+                                    opacity: 0;
+                                    left: 0px;
+                                    z-index: 3;
+                                    cursor: pointer;
+                                }
+                                .checkmark {
+                                    z-index: 2;
+                                    position: absolute;
+                                    top: 50%;
+                                    left: 0px;
+                                    height: 16px;
+                                    width: 16px;
+                                    background-color: #eee;
+                                    border-radius: 50%;
+                                    border: 2px solid #6a7a99;
+                                    transform: translateY(-50%);
+                                }
+                                & input:checked ~ .checkmark {
+                                    background-color: #fff;
+                                    border: 2px solid #1a064f;
+                                }
+
+                                .checkmark:after {
+                                    content: "";
+                                    position: absolute;
+                                    display: none;
+                                }
+
+                                /* Show the indicator (dot/circle) when checked */
+                                & input:checked ~ .checkmark:after {
+                                    display: block;
+                                }
+
+                                /* Style the indicator (dot/circle) */
+                                & .checkmark:after {
+                                    top: 50%;
+                                    left: 50%;
+                                    width: 8px;
+                                    transform: translate(-50%, -50%);
+                                    height: 8px;
+                                    border-radius: 50%;
+                                    background: var(--primary-color);
+                                }
+                            }
+                            .number {
+                                color: #4f547b;
+                            }
+                        }
 
                         label {
                             font-family: "Inter-Medium";
                         }
                     }
-                    button{
+                    button {
                         margin-top: 5px;
                         width: fit-content;
                         text-decoration: underline;
-                        color: #6440FB;
-                        &:hover{
+                        color: #6440fb;
+                        padding-left: 0;
+                        &:hover {
                             background-color: transparent;
                         }
+                    }
+                }
+                .slider {
+                    -webkit-appearance: none;
+                    width: 100%;
+                    height: 5px;
+                    border-radius: 5px;
+                    background: #d3d3d3;
+                    outline: none;
+                    opacity: 0.7;
+                    -webkit-transition: 0.2s;
+                    transition: opacity 0.2s;
+                    &::-webkit-slider-thumb {
+                        -webkit-appearance: none;
+                        appearance: none;
+                        width: 17px;
+                        height: 15px;
+                        background: url("../icon/radius-checked.svg");
+                        cursor: pointer;
+                    }
+                    &::-moz-range-thumb {
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background: #04aa6d;
+                        cursor: pointer;
                     }
                 }
             }
@@ -301,10 +448,10 @@
             align-items: center;
             font-size: 14px;
             margin-bottom: 23px;
-            color: #0D3356;
+            color: #0d3356;
 
             select {
-                color: #0D3356;
+                color: #0d3356;
             }
         }
 
@@ -337,6 +484,9 @@
                     align-items: center;
                     border-top-left-radius: 18px;
                     border-top-right-radius: 18px;
+                    img {
+                        object-fit: contain;
+                    }
                 }
 
                 .product-info {

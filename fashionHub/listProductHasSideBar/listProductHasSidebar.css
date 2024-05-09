@@ -1,3 +1,11 @@
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header {
   position: fixed;
   height: 90px;
@@ -112,8 +120,9 @@
   margin-top: 125px;
   position: relative;
   background-image: linear-gradient(to bottom, #f4e8f3 100%, #f3eff6 100%);
-  border-radius: 10px;
   height: 287px;
+  width: 100%;
+  max-width: 1440px;
 }
 .banner .text-banner {
   position: absolute;
@@ -161,12 +170,12 @@
 .layout-sidebar .filter .header-filter button {
   font-family: "Inter-Regular";
   font-size: 14px;
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   border-radius: 30px;
   padding: 10px 20px;
 }
 .layout-sidebar .filter .fields-filter {
-  border: 1px solid #F3F3F3;
+  border: 1px solid #f3f3f3;
   border-radius: 7px;
 }
 .layout-sidebar .filter .fields-filter .field {
@@ -182,7 +191,7 @@
   padding: 15px 14px;
   width: 100px;
   border-radius: 14px;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
 }
 .layout-sidebar .filter .fields-filter .field .name-field {
   margin-bottom: 30px;
@@ -201,30 +210,30 @@
   gap: 10px;
   font-size: 14px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #DDDDDD;
+  border-bottom: 1px solid #dddddd;
 }
 .layout-sidebar .filter .fields-filter .field .option-field .option {
   gap: 10px;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label {
   display: flex;
   align-items: center;
-  gap: 10px;
-  position: relative;
   /* Show the indicator (dot/circle) when checked */
   /* Style the indicator (dot/circle) */
 }
 .layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label input[type=radio] {
   position: absolute;
   opacity: 0;
+  left: -10px;
   cursor: pointer;
 }
 .layout-sidebar .filter .fields-filter .field .option-field .option .checkbox-label .checkmark {
   position: absolute;
   top: 50%;
-  left: 8px;
+  left: -10px;
   height: 16px;
   width: 16px;
   background-color: #eee;
@@ -252,6 +261,112 @@
   border-radius: 50%;
   background: var(--primary-color);
 }
+.layout-sidebar .filter .fields-filter .field .option-field .option .container-checkbox-custom {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .container-checkbox-custom input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .container-checkbox-custom .checkmark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  border: 2px solid #6a7a99;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .container-checkbox-custom .checkmark-radio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .container-checkbox-custom input:checked ~ .checkmark-radio {
+  background-color: #1a064f;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .container-checkbox-custom input:checked ~ .checkmark-radio:after {
+  display: block;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option .container-checkbox-custom .checkmark-radio:after {
+  left: 3px;
+  top: 1px;
+  width: 3px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio {
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  position: relative;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .checkbox-label label {
+  color: #140342;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .checkbox-label input[type=radio] {
+  position: absolute;
+  opacity: 0;
+  left: 0px;
+  z-index: 3;
+  cursor: pointer;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .checkbox-label .checkmark {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  height: 16px;
+  width: 16px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 2px solid #6a7a99;
+  transform: translateY(-50%);
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .checkbox-label input:checked ~ .checkmark {
+  background-color: #fff;
+  border: 2px solid #1a064f;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .checkbox-label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .checkbox-label input:checked ~ .checkmark:after {
+  display: block;
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .checkbox-label .checkmark:after {
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+.layout-sidebar .filter .fields-filter .field .option-field .option-radio .number {
+  color: #4f547b;
+}
 .layout-sidebar .filter .fields-filter .field .option-field .option label {
   font-family: "Inter-Medium";
 }
@@ -260,10 +375,36 @@
   width: -moz-fit-content;
   width: fit-content;
   text-decoration: underline;
-  color: #6440FB;
+  color: #6440fb;
+  padding-left: 0;
 }
 .layout-sidebar .filter .fields-filter .field .option-field button:hover {
   background-color: transparent;
+}
+.layout-sidebar .filter .fields-filter .field .slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.layout-sidebar .filter .fields-filter .field .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 15px;
+  background: url("../icon/radius-checked.svg");
+  cursor: pointer;
+}
+.layout-sidebar .filter .fields-filter .field .slider::-moz-range-thumb {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #04aa6d;
+  cursor: pointer;
 }
 .layout-sidebar .container-list-product {
   width: 955px;
@@ -275,10 +416,10 @@
   align-items: center;
   font-size: 14px;
   margin-bottom: 23px;
-  color: #0D3356;
+  color: #0d3356;
 }
 .layout-sidebar .container-list-product .total-sort select {
-  color: #0D3356;
+  color: #0d3356;
 }
 .layout-sidebar .container-list-product .list-product {
   display: flex;
@@ -308,6 +449,10 @@
   align-items: center;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
+}
+.layout-sidebar .container-list-product .list-product .product .image-product img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .layout-sidebar .container-list-product .list-product .product .product-info {
   padding: 25px;
