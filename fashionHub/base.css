@@ -47,6 +47,15 @@
     font-family: 'ProximaNova-Bold';
     src: url('./fonts/ProximaNova-Bold.ttf') format('truetype');
 }
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
 
 * {
     font-family: "Inter-Regular";
@@ -84,9 +93,10 @@ select{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background-image: url("./icon/Frame\ \(2\).png");
+    background-image: url("./icon/arrowDown.png");
     background-repeat: no-repeat;
     background-position: calc(100% - 9px) center;
+    color: #1D364D;
 }
 .container {
     width: 100%;
