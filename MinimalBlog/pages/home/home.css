@@ -1,0 +1,211 @@
+.header {
+  position: fixed;
+  height: 85px;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+}
+.header .header-container {
+  width: 100%;
+  max-width: 965px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-right {
+  display: flex;
+  height: 24px;
+  gap: 50px;
+  width: 50%;
+  justify-content: space-between;
+}
+.header-right .brandName {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 24px;
+}
+.header-right .input-search {
+  display: flex;
+  gap: 10px;
+  width: 200px;
+  height: 24px;
+}
+.header-right .input-search img {
+  height: 100%;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 24px;
+}
+.header-left-list {
+  gap: 30px;
+}
+.header-left-list-item {
+  display: flex;
+  align-items: center;
+}
+
+h2,
+h3,
+h1 {
+  font-family: "Inter-Bold";
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 27px;
+}
+
+.description {
+  color: #718096;
+  font-size: 14px;
+  line-height: 19.36px;
+}
+
+.container-banner {
+  margin-top: 85px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+.container-banner img {
+  width: 1150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-cards_horizonal {
+  justify-content: center;
+  display: flex;
+  height: 247px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0px 10px 10px -6px rgba(221, 221, 221, 0.2509803922);
+}
+.container-cards_horizonal_info {
+  padding: 41px 77px 43px 52px;
+  width: 530px;
+  height: 100%;
+}
+.container-cards_horizonal_info-head {
+  margin-bottom: 27px;
+}
+.container-cards_horizonal_info p {
+  width: 400px;
+  margin-bottom: 30px;
+}
+.container-cards_horizonal_image {
+  width: calc(100% - 400px);
+  height: 100%;
+}
+.container-cards_horizonal_image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container-cards_horizonal_info_date_btn {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.container-cards_horizonal_info_date_btn span {
+  color: #718096;
+}
+.container-cards_horizonal_info_date_btn a {
+  font-family: "Inter-Bold";
+}
+
+.container-cards_vertical {
+  height: 382px;
+  margin: 43px 0;
+  display: flex;
+  gap: 33px;
+}
+.container-cards_vertical .card_vertical {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px 0px rgba(192, 189, 189, 0.2509803922);
+}
+.container-cards_vertical .card_vertical .infor {
+  padding: 18px 17px;
+}
+.container-cards_vertical .card_vertical .infor .description {
+  margin: 15px 0 22px 0;
+}
+.container-cards_vertical .card_vertical .infor .date_btn {
+  display: flex;
+  font-size: 12px;
+  justify-content: space-between;
+}
+.container-cards_vertical .card_vertical .infor .date_btn span {
+  color: #718096;
+}
+.container-cards_vertical .card_vertical .infor .date_btn a {
+  font-family: "Inter-Bold";
+}
+.container-cards_vertical .card_vertical .image img {
+  width: 100%;
+  height: 179px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container-cards_bottom {
+  display: flex;
+}
+.container-cards_bottom .infor {
+  background-color: #f7fafc;
+  padding: 98px 63px;
+  width: calc(100% - 500px);
+}
+.container-cards_bottom .infor .description {
+  margin: 24px 0 31px 0;
+}
+.container-cards_bottom .infor .date_btn {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+}
+.container-cards_bottom .infor .date_btn span {
+  color: #718096;
+}
+.container-cards_bottom .infor .date_btn a {
+  font-family: "Inter-Bold";
+}
+.container-cards_bottom .image {
+  height: 525px;
+  width: 500px;
+}
+.container-cards_bottom .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.btn_more {
+  margin: 30px 0;
+  background-color: #6b46c1;
+  color: white;
+  font-family: "Inter-SemiBold";
+  padding: 10px 9px;
+  border-radius: 7px;
+  display: flex;
+  gap: 7px;
+  align-items: flex-start;
+  float: right;
+}/*# sourceMappingURL=home.css.map */
